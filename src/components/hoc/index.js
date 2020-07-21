@@ -1,1 +1,1 @@
-export {default as withSearchService} from './with-search-service';
+export {default as withSearchService} from './with-search-service.jsx';

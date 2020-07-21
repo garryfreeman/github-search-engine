@@ -1,15 +1,15 @@
 import React from 'react';
 
-import {SearchServiceConsumer} from '../contact-service-context';
+import {SearchServiceConsumer} from '../search-service-context';
 
-const withResumeService = () => (Wrapped) => {
+const withSearchService = () => (Wrapped) => {
    return (props) => {
       return (
          <SearchServiceConsumer>
             {
                (searchService) => {
                   return(
-                     <Wrapped {...props} contactService={searchService} />
+                     <Wrapped {...props} searchService={searchService} />
                   );
                }
             }
@@ -18,4 +18,4 @@ const withResumeService = () => (Wrapped) => {
    }
 };
 
-export default withResumeService;
+export default withSearchService;

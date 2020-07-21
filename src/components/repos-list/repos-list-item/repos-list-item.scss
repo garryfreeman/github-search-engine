@@ -1,0 +1,99 @@
+
+.repos-list__item:not(:last-child) {
+   border-bottom: 1px solid #e1e4e8;
+}
+
+.repos-list__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 16px 16px 10px;
+}
+
+.repos-list__item-title {
+   margin-bottom: 8px;
+
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: bold;
+   color: #0366d6;
+   text-decoration: none;
+}
+
+.repos-list__item-title .svg-icon {
+   height: 16px;
+   margin-right: 10px;
+
+   vertical-align: -2px;
+}
+
+.repos-list__item-description {
+   margin-bottom: 8px;
+
+   font-size: 14px;
+   line-height: 21px;
+   color: rgb(88, 96, 105);
+}
+
+.repos-list__item-additional-info {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+
+   font-size: 12px;
+   line-height: 18px;
+   color: rgb(88, 96, 105);
+}
+
+.repos-list__item-additional-info > span {
+   margin-right: 16px;
+}
+
+.repos-list__item-language span:first-child {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   margin-right: 4px;
+
+   vertical-align: -1px;
+
+   border-radius: 50%;
+   background-color: #f7e01d;
+}
+
+.repos-list__item-stars span:first-child,
+.repos-list__item-forks span:first-child {
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   margin-right: 4px;
+}
+
+.repos-list__item-stars .svg-icon {
+   vertical-align: -2px;
+}
+
+
+.repos-list__item-forks .svg-icon {
+   vertical-align: -2px;
+}
+
+.repos-list__item .svg-icon {
+   height: 14px;
+}
+
+.repos-list__item-owner {
+   color: rgb(88, 96, 105);
+}
+
+.repos-list__item-owner img {
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   margin-right: 4px;
+
+
+   vertical-align: -3px;
+}

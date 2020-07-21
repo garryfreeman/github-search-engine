@@ -1,0 +1,1 @@
+export {SearchServiceProvider, SearchServiceConsumer} from './search-service-context';

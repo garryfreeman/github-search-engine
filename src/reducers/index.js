@@ -1,6 +1,7 @@
 const initialState = {
 	loading: true,
-	error: false
+	error: false,
+	reposList: []
 };
 
 
@@ -17,7 +18,7 @@ const reducer = (state = initialState, action) => {
 		case 'CONTENT_LOADED':
 			return {
 				...state,
-				...action.payload,
+				reposList: action.payload,
 				loading: false,
 				error: false
 			}
@@ -25,7 +26,7 @@ const reducer = (state = initialState, action) => {
 		case 'CONTENT_ERROR':
 			return {
 				...state,
-				content: null,
+				reposList: [],
 				loading: false,
 				error: true
 			};

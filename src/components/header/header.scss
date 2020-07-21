@@ -1,0 +1,26 @@
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 10px 20px;
+
+   font-size: 14px;
+   color: hsla(0, 0%, 100%, 0.9);
+   
+   background-color: #24292e;
+}
+
+.header__git-link {
+   margin-right: 20px;
+}
+
+.header .svg-icon {
+   height: 32px;
+
+   fill: hsla(0, 0%, 100%, 0.9);
+}
+
+.header__title {
+   font-size: 20px;
+}
