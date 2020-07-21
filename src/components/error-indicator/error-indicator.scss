@@ -1,0 +1,27 @@
+.error-indicator {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+
+   background-color: #000000;
+}
+
+.error-indicator__image {
+   width: 100%;
+   max-width: 600px;
+}
+
+.error-indicator__title {
+   margin-top: 15px;
+
+   font-size: 24px;
+   font-weight: bold;
+   line-height: 34px;
+   letter-spacing: 1px;
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+}

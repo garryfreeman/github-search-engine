@@ -1,0 +1,1 @@
+export {default as withSearchService} from './with-search-service';

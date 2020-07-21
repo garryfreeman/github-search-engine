@@ -1,0 +1,16 @@
+.spinner {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+
+   z-index: 10;
+
+   background-color: white;
+}
+
+.app--dark .spinner {
+   background-color: #111821;
+}
