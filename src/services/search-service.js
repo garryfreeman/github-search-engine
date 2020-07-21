@@ -10,8 +10,6 @@ export default class searchService {
 		let url = this._apiBase;
 
 		if (reposName) {
-			console.log(reposName.replace(/\s/g, '+'))
-
 			url = url + reposName.replace(/\s/g, '+');
 		}
 		
@@ -22,7 +20,6 @@ export default class searchService {
 		if (language) {
 			url = url + `+language:${language}`;
 		}
-		console.log(url)
 		const res = await fetch(`${url}&sort=stars&order=desc`);
    
       if (!res.ok) {

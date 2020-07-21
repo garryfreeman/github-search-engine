@@ -16,12 +16,10 @@ const SearchForm = (props) => {
 
    let handleSubmit = (e) => {
       e.preventDefault();
-      console.log(reposeName, username, language)
       contentRequested();
       searchService.getData(reposeName, username, language)
          .then( (content) => contentLoaded(content.items) )
          .catch( () => contentError('errror') );
-
    }
 
    return (
